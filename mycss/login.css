@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+    font-family: 'Roboto', sans-serif
+}
+
+section {
+    background-color: #2cb34f;
+}
+
+#cardRadius {
+    border-radius: 1rem;
+}
+
+#imgRadius {
+    border-radius: 1rem 0 0 1rem;
+}
+
+#hesapAc {
+    letter-spacing: 1px;
+}
+
+a {
+    color: red;
+}

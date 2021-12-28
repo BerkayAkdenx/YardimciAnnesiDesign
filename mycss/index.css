@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+    font-family: 'Roboto', sans-serif
+}
+
+#panel, #flip {
+    padding: 5px;
+    text-align: center;
+    background-color: #2cb34f;
+    border: solid 1px #2cb34f;
+    color: white;
+}
+
+#panel {
+    padding: 50px;
+    display: none;
+}
+
+#up a {
+    float: right;
+!important;
+    padding-right: 20px;
+    font-size: 60px;
+}
+
+#navRenk {
+    background-color: #2cb34f;
+}
+
+
+#formYapi {
+    margin-left: 0px;
+    margin-right: 0px;
+    background-color: #2cb34f;
+}
+
+#birlestirKadini {
+    padding-left: 0px;
+}
+
+.baslik {
+    font-size: 70px;
+}
+
+.ortaYazi {
+    font-size: 20PX;
+}
+
+.altYazi {
+    font-size: 16PX;
+}
+
+.cardW {
+    width: 100%;
+}
+
+footer {
+    background-color: #f1f1f1;
+}
+
+#footeralt {
+    background-color: rgba(0, 0, 0, 0.2);
+}

@@ -1,0 +1,539 @@
+<!doctype html>
+<html lang="tr">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- my CSS -->
+    <link rel="stylesheet" href="mycss/index.css">
+    <!-- jquery js -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- FontAwesome CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>Yardımcı Annesi</title>
+
+    <script>
+
+        $(document).ready(function () {
+            $("#flip").click(function () {
+                $("#panel").slideDown("slow");
+            });
+        });
+
+        function myFunction() {
+            alert("Mail kutunuza Kayıt formu gönderildi!");
+        }
+
+        function kullaniciYorumlari() {
+            alert("Ahmet : Verdiğim her kıyafeti tertemiz annem yıkamış gibi geri alıyorum \n Ceyda : Hergün saat 8 de yemeklerim sıcak bir şekilde hazır oluyor \n eric : She is my best");
+        }
+
+        function wp() {
+            alert("+905055033434 hattıyla whatsapp üzerinden iletişime geçebilirsiniz!");
+        }
+    </script>
+
+</head>
+<body class="bg-light">
+<div class="container">
+    <div class="row" id="navbar">
+        <div class="col-md-12">
+            <nav class="navbar navbar-expand-lg navbar-dark " id="navRenk">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#">Yardımcı Annesi</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                            aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">Ana Sayfa</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#anne_ilanlari">Anneler</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#sss">sss</a>
+                            </li>
+                            <li class="nav-item dropdown float-end">
+                                <a class="nav-link dropdown-toggle " href="#" id="navbarDropdownMenuLink" role="button"
+                                   data-bs-toggle="dropdown" aria-expanded="false">
+                                    <i class="far fa-user-circle"></i> profil
+                                </a>
+                                <ul class="dropdown-menu bg-danger" aria-labelledby="navbarDropdown">
+                                    <li><a class="dropdown-item" href="login.html">Giris yap</a></li>
+                                    <li><a class="dropdown-item" href="register.html">kayıt ol</a></li>
+                                    <li><a class="dropdown-item" href="hakkimizda.html">Hakkımızda</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <img src="images/10.jpg" alt="yemekAnnesiFoto" width="100%">
+        </div>
+    </div>
+    <form action="#">
+        <div class="row  p-2 pt-3" id="formYapi">
+            <div class="col-md-4">
+                <h3 class="text-white text-center">Annelik İlanı Ver</h3>
+            </div>
+            <div class="col-md-4">
+                <input type="email" name="email_adresi" class="form-control" placeholder="Email adress">
+            </div>
+            <div class="col-md-4 d-grid">
+                <button class="btn btn-danger btn" onclick="myFunction()"> Ön Kayıt Oluştur</button>
+            </div>
+        </div>
+    </form>
+
+    <div class="row" id="kolaycaKullan">
+        <div class="col-md-6">
+            <img src="images/kollayca%20kullan.PNG" width="80%" alt="">
+        </div>
+        <div class="col-md-6 py-5 ">
+            <h2 class="text-center"> Kolayca Kullan</h2>
+            <p class="text-center">Hizmet alacağın servis için hazırlanmış sorularına bir dakika içinde cevap ver
+                Bekleyen işlerini kolayca hallet.</p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-6 py-5 bg-white" style="">
+            <h2 class="text-center"> Kaliteli Hizmet Al</h2>
+            <p class="text-center">Teklif aldığın hizmet verenlerin kalitesini önceki işlemlerinde aldıkları gerçek
+                müşteri yorumları
+                sayesinde görür.Güvenle kararını verirsin.</p>
+        </div>
+        <div class="col-md-6" id="birlestirKadini">
+            <img src="images/180811okey.jpg" width="100%" alt="okey yapan kadın">
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-6">
+            <img src="images/zamankazan.png" width="80%" alt="">
+        </div>
+        <div class="col-md-6 py-5 ">
+            <h2 class="text-center"> Zaman Kazan</h2>
+            <p class="text-center">Aradığın hizmet için dükkan dükkan dolaşmak ya da tanıdıklarından referans aramakla
+                uğraşma.Teklifler cebine gelsin,zamanın sevdiklerinle sana kalsın.</p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-6 py-5 bg-white ">
+            <h2 class="text-center"> Garantide ol</h2>
+            <p class="text-center">Gönül rahatlığıyla hizmet alman için, Armut'tan teklif seçimi yaptığın işler
+                garantimiz altında.</p>
+        </div>
+        <div class="col-md-6" style="padding-left: 0">
+            <img src="images/garantide%20ol.png" width="100%" alt="">
+
+        </div>
+    </div>
+    <div class="row pt-4">
+        <div class="col-12">
+            <h2 class="text-center "> Nasıl Çalışır</h2>
+            <hr>
+        </div>
+    </div>
+    <div class="row pt-2">
+        <div class="col-md-4">
+            <div class="row">
+                <div class="col-12">
+                    <p class="text-center baslik">1</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <P class="text-center ortaYazi"> İHTİYACINI BİRKAÇ
+                        SORUDA ANLAT</P>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <P class="text-center altYazi"> ihtiyacına özel soruları cevapla ve <br> iletişim
+                        bilgilerini gir.
+                        İstersen iletişim bilgilerini gizli tut.</P>
+                </div>
+            </div>
+            <div class="row py-2">
+                <div class="col-12">
+                    <img src="images/howto@2x-1.jpg" width="100%" alt="">
+                </div>
+            </div>
+
+        </div>
+        <div class="col-md-4">
+            <div class="row">
+                <div class="col-12">
+                    <p class="text-center baslik">2</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <P class="text-center ortaYazi"> ÖZEL FİYAT <br> TEKLİFLERİ AL</P>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <P class="text-center altYazi"> İşinle ilgilenen ve müsait olan profesyonellerle
+                        itiyacını bildirelim.İhtiyacına özel teklif al ..</P>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <img src="images/howto@2x-2.jpg" width="100%" alt="">
+                </div>
+            </div>
+
+        </div>
+        <div class="col-md-4">
+            <div class="row">
+                <div class="col-12">
+                    <p class="text-center baslik">3</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <P class="text-center ortaYazi"> KARŞILAŞTIR VE <br> SEÇ</P>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <P class="text-center altYazi"> Müşteri yorumlarını incele, pazarlık yap. En uygun
+                        fiyat ve kaliteyi tercih et.</P>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <img src="images/howto@2x-3.jpg" width="100%" alt="el sıkısma fotosu">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row pt-3" id="anne_ilanlari">
+        <div class="col-12">
+            <h2 class="text-center">Yardımcı Anne İlanları</h2>
+            <hr>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-4">
+            <div class="card cardW">
+                <img src="images/hande.jpg" class="card-img-top" alt="handeteyze">
+                <div class="card-body">
+                    <h5 class="card-title">AYŞE AKYOL</h5>
+                    <p class="card-text">Merhaba 52 yaşında 1 polis ve 1 avukat annesi olma guruyla ev hanımıyım uzun
+                        yıllara dayanan tecrübelerimle herzaman yardıma etmeye hazırım.</p>
+                </div>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">iSTANBUL/SİSLİ/FERİKÖY</li>
+                    <li class="list-group-item">YEMEK/ÜTÜ/ÇAMAŞIR/TEMİZLİK</li>
+                    <li class="list-group-item">puanı :8.8</li>
+                </ul>
+                <div class="card-body ">
+                    <a href="#" onclick="wp()" class="card-link text-decoration-none btn-success btn ">WHATSAPP
+                        link</a>
+                    <br>
+                    <a href="#" onclick="kullaniciYorumlari()" class="card-link text-decoration-none btn-danger btn ">kullanıcı
+                        yorumları</a>
+
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card cardW">
+                <img src="images/zekeriye.jpg" class="card-img-top" alt="handeteyze">
+                <div class="card-body">
+                    <h5 class="card-title">AYŞE AKYOL</h5>
+                    <p class="card-text">Merhaba 52 yaşında 1 polis ve 1 avukat annesi olma guruyla ev hanımıyım uzun
+                        yıllara dayanan tecrübelerimle herzaman yardıma etmeye hazırım.</p>
+                </div>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">iSTANBUL/SİSLİ/FERİKÖY</li>
+                    <li class="list-group-item">YEMEK/ÜTÜ/ÇAMAŞIR/TEMİZLİK</li>
+                    <li class="list-group-item">puanı :8.8</li>
+                </ul>
+                <div class="card-body ">
+                    <a href="#" onclick="wp()" class="card-link text-decoration-none btn-success btn ">WHATSAPP
+                        link</a>
+                    <br>
+                    <a href="#" onclick="kullaniciYorumlari()" class="card-link text-decoration-none btn-danger btn ">kullanıcı
+                        yorumları</a>
+
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card cardW">
+                <img src="images/meryem.jfif" class="card-img-top" alt="handeteyze">
+                <div class="card-body">
+                    <h5 class="card-title">AYŞE AKYOL</h5>
+                    <p class="card-text">Merhaba 52 yaşında 1 polis ve 1 avukat annesi olma guruyla ev hanımıyım uzun
+                        yıllara dayanan tecrübelerimle herzaman yardıma etmeye hazırım.</p>
+                </div>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">iSTANBUL/SİSLİ/FERİKÖY</li>
+                    <li class="list-group-item">YEMEK/ÜTÜ/ÇAMAŞIR/TEMİZLİK</li>
+                    <li class="list-group-item">puanı :8.8</li>
+                </ul>
+                <div class="card-body ">
+                    <a href="#" onclick="wp()" class="card-link text-decoration-none btn-success btn ">WHATSAPP
+                        link</a>
+                    <br>
+                    <a href="#" onclick="kullaniciYorumlari()" class="card-link text-decoration-none btn-danger btn ">kullanıcı
+                        yorumları</a>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row pt-4">
+        <div class="col-md-4">
+            <div class="card cardW">
+                <img src="images/asuman.jpg" class="card-img-top" alt="handeteyze">
+                <div class="card-body">
+                    <h5 class="card-title">AYŞE AKYOL</h5>
+                    <p class="card-text">Merhaba 52 yaşında 1 polis ve 1 avukat annesi olma guruyla ev hanımıyım uzun
+                        yıllara dayanan tecrübelerimle herzaman yardıma etmeye hazırım.</p>
+                </div>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">iSTANBUL/SİSLİ/FERİKÖY</li>
+                    <li class="list-group-item">YEMEK/ÜTÜ/ÇAMAŞIR/TEMİZLİK</li>
+                    <li class="list-group-item">puanı :8.8</li>
+                </ul>
+                <div class="card-body ">
+                    <a href="#" onclick="wp()" class="card-link text-decoration-none btn-success btn ">WHATSAPP
+                        link</a>
+                    <br>
+                    <a href="#" onclick="kullaniciYorumlari()" class="card-link text-decoration-none btn-danger btn ">kullanıcı
+                        yorumları</a>
+
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card cardW">
+                <img src="images/karin.jpg" class="card-img-top" alt="handeteyze">
+                <div class="card-body">
+                    <h5 class="card-title">AYŞE AKYOL</h5>
+                    <p class="card-text">Merhaba 52 yaşında 1 polis ve 1 avukat annesi olma guruyla ev hanımıyım uzun
+                        yıllara dayanan tecrübelerimle herzaman yardıma etmeye hazırım.</p>
+                </div>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">iSTANBUL/SİSLİ/FERİKÖY</li>
+                    <li class="list-group-item">YEMEK/ÜTÜ/ÇAMAŞIR/TEMİZLİK</li>
+                    <li class="list-group-item">puanı :8.8</li>
+                </ul>
+                <div class="card-body ">
+                    <a href="#" onclick="wp()" class="card-link text-decoration-none btn-success btn ">WHATSAPP
+                        link</a>
+                    <br>
+                    <a href="#" onclick="kullaniciYorumlari()" class="card-link text-decoration-none btn-danger btn ">kullanıcı
+                        yorumları</a>
+
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card cardW">
+                <img src="images/selin.jpg" class="card-img-top" alt="handeteyze">
+                <div class="card-body">
+                    <h5 class="card-title">AYŞE AKYOL</h5>
+                    <p class="card-text">Merhaba 52 yaşında 1 polis ve 1 avukat annesi olma guruyla ev hanımıyım uzun
+                        yıllara dayanan tecrübelerimle herzaman yardıma etmeye hazırım.</p>
+                </div>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">iSTANBUL/SİSLİ/FERİKÖY</li>
+                    <li class="list-group-item">YEMEK/ÜTÜ/ÇAMAŞIR/TEMİZLİK</li>
+                    <li class="list-group-item">puanı :8.8</li>
+                </ul>
+                <div class="card-body ">
+                    <a href="#" onclick="wp()" class="card-link text-decoration-none btn-success btn ">WHATSAPP
+                        link</a>
+                    <br>
+                    <a href="#" onclick="kullaniciYorumlari()" class="card-link text-decoration-none btn-danger btn ">kullanıcı
+                        yorumları</a>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row pt-3" id="sss">
+        <div class="col-12">
+            <h2 class="text-center">Sıkca Sorulan Sorular</h2>
+        </div>
+    </div>
+    <div class="row pt-3">
+        <div class="col-12">
+            <div class="accordion" id="accordionExample">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingOne">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            Nasıl üye olabilirim?
+                        </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                         data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <strong>Menu Kısmımızdaki Giriş işlemlerinde ki kayıt bölümünden
+                                sende kendine uygun profilini oluşturabilirsin.</strong>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            Üye olmak için bir ücret ödemem gerekir mi?
+                        </button>
+                    </h2>
+                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                         data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <strong>Üyelik tamamen ücretsiz ve çok kolay</strong>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            Yardımcı Annesi'nde Nasıl Hizmet Verilir?
+                        </button>
+                    </h2>
+                    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                         data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <strong>
+                                Yardımcı Annesi oluşturduğun hizmet talebini, sana en uygun olan hizmet verenlerle
+                                paylaşır ve
+                                ğunlukla birkaç saat içerisinde, hizmet verenlerin tekliflerini iletmeye başlar. Teklif
+                                gelme süresi en fazla 3 gündür. Karar vermeden önce teklif sahiplerinin geçmişte
+                                tamamladığı işleri ve referanslarını inceleyebilir, soruların olduğu takdirde sistem
+                                üzerinden hizmet verenlerle mesajlaşabilir veya telefon yoluyla iletişime
+                                geçebilirsin.
+                            </strong>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row pt-3" id="hayriye_anne">
+        <div class="col-md-6">
+            <img src="images/hayriye%20anne" width="100%" alt="hayriye anne">
+        </div>
+        <div class="col-md-6">
+
+            <div id="flip"><h2 class="text-center">Hayriye Anne Diyorki !</h2></div>
+            <hr>
+            <div id="panel"><p> Sevgili gençler, annenizin yerini dolduramayız ama sizler için annenize en yakın hizmeti
+                vermeye
+                hazırız.Sizlere temiz bir hizmet vermek bizleri sevindiriyor. Sıcak bir yemek ,jilet gibi ütülenmiş bir
+                gömlek
+                ,tertemiz yıkanmış bir çamaşır ve güzelce temizlenmiş bir ev en önemliside anne eli değmiş bir şekilde
+                ve bunun gibi bir çok hizmet vermek için sizlerin bizimle iletişim kurmasını bekliyoruz bekliyoruz.</p>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <br>
+            <footer class="text-center text-white">
+                <!-- Grid container -->
+                <div class="container pt-4">
+                    <!-- Section: Social media -->
+                    <section class="mb-4">
+                        <!-- Facebook -->
+                        <a
+                                class="btn btn-link btn-floating btn-lg text-dark m-1"
+                                href="#!"
+                                role="button"
+                                data-mdb-ripple-color="dark"
+                        ><i class="fab fa-facebook-f"></i
+                        ></a>
+
+                        <!-- Twitter -->
+                        <a
+                                class="btn btn-link btn-floating btn-lg text-dark m-1"
+                                href="#!"
+                                role="button"
+                                data-mdb-ripple-color="dark"
+                        ><i class="fab fa-twitter"></i
+                        ></a>
+
+                        <!-- Google -->
+                        <a
+                                class="btn btn-link btn-floating btn-lg text-dark m-1"
+                                href="#!"
+                                role="button"
+                                data-mdb-ripple-color="dark"
+                        ><i class="fab fa-google"></i
+                        ></a>
+
+                        <!-- Instagram -->
+                        <a
+                                class="btn btn-link btn-floating btn-lg text-dark m-1"
+                                href="#!"
+                                role="button"
+                                data-mdb-ripple-color="dark"
+                        ><i class="fab fa-instagram"></i
+                        ></a>
+
+                        <!-- Linkedin -->
+                        <a
+                                class="btn btn-link btn-floating btn-lg text-dark m-1"
+                                href="#!"
+                                role="button"
+                                data-mdb-ripple-color="dark"
+                        ><i class="fab fa-linkedin"></i
+                        ></a>
+                        <!-- Github -->
+                        <a
+                                class="btn btn-link btn-floating btn-lg text-dark m-1"
+                                href="#!"
+                                role="button"
+                                data-mdb-ripple-color="dark"
+                        ><i class="fab fa-github"></i
+                        ></a>
+                    </section>
+                    <!-- Section: Social media -->
+                </div>
+                <!-- Grid container -->
+
+                <!-- Copyright -->
+                <div class="text-center text-dark p-3" id="footeralt">
+                    © 2020 Copyright:
+                    <a class="text-dark" href="https://mdbootstrap.com/">Berkay Akdeniz</a>
+                </div>
+                <!-- Copyright -->
+            </footer>
+        </div>
+    </div>
+    <div class="fixed-bottom" id="up">
+        <a href="#"><i class="fas fa-angle-up b"></i></a>
+    </div>
+</div>
+
+<!-- Optional JavaScript; choose one of the two! -->
+
+<!-- Option 1: Bootstrap Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- Option 2: Separate Popper and Bootstrap JS -->
+<!--
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+-->
+</body>
+</html>
